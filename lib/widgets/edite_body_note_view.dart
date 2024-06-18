@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/custom_app_bar.dart';
+import 'package:notes_app/widgets/custom_bottom_feild.dart';
+import 'package:notes_app/widgets/custom_text_feild.dart';
 
 class EditeNoteBody extends StatelessWidget {
   const EditeNoteBody({super.key});
@@ -19,6 +21,26 @@ class EditeNoteBody extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
+          SizedBox(
+            height: 25,
+          ),
+          CustomTextFeild(
+            hintText: "Tiltle",
+            maxLines: 1,
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          CustomTextFeild(
+            hintText: "Content",
+            maxLines: 5,
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          CustomButtomFeild(
+            data: "Edite",
+          )
         ],
       ),
     );

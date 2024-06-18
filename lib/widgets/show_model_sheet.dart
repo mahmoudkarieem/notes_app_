@@ -28,7 +28,9 @@ class ShowModelSheet extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
-          CustomButtomFeild()
+          CustomButtomFeild(
+            data: "Add",
+          )
         ],
       ),
     );

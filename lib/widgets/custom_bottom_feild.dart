@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/constants.dart';
 
 class CustomButtomFeild extends StatelessWidget {
-  const CustomButtomFeild({super.key});
+  const CustomButtomFeild({super.key, required this.data});
+  final String data;
 
   @override
   Widget build(BuildContext context) {
@@ -15,10 +16,10 @@ class CustomButtomFeild extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           color: kPrimaryColor,
         ),
-        child: const Center(
+        child: Center(
           child: Text(
-            "Add",
-            style: TextStyle(
+            data,
+            style: const TextStyle(
               fontSize: 24,
               color: Colors.black,
               fontWeight: FontWeight.bold,
