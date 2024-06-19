@@ -20,9 +20,11 @@ class NotesViewBody extends StatelessWidget {
             data: "Notes",
           ),
           SizedBox(
-            height: 20,
+            height: 10,
           ),
-          Expanded(child: NotesListView())
+          Expanded(
+            child: NotesListView(),
+          )
         ],
       ),
     );
