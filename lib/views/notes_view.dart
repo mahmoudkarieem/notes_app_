@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/views/notes_view_body.dart';
-import 'package:notes_app/widgets/constants.dart';
+
 import 'package:notes_app/widgets/show_model_sheet.dart';
 
 class NotesView extends StatelessWidget {
@@ -12,12 +12,13 @@ class NotesView extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
+
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
-                  side: const BorderSide(color: kPrimaryColor)),
+                  side: const BorderSide(color: Colors.black)),
               context: context,
               builder: (context) {
-                return const ShowModelSheet();
+                return  const ShowModelSheet();
               });
         },
         child: const Icon(

@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/constants.dart';
 
 class CustomButtomFeild extends StatelessWidget {
-  const CustomButtomFeild({super.key, required this.data});
+  const CustomButtomFeild({super.key, required this.data, this.onTap});
   final String data;
-
+final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap:onTap,
       child: Container(
         height: 55,
         width: MediaQuery.of(context).size.width,

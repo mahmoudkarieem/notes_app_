@@ -25,7 +25,7 @@ class EditeNoteBody extends StatelessWidget {
             height: 25,
           ),
           CustomTextFeild(
-            hintText: "Tiltle",
+            hintText: "Title",
             maxLines: 1,
           ),
           SizedBox(
